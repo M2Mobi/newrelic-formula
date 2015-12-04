@@ -1,6 +1,6 @@
 include:
   - .repo
-  {% if salt['pkg.list_pkgs']().get('php5', False) -%}
+  {% if salt['pkg.list_pkgs']().get('php', False) -%}
   - .daemon
   - .php
   {% endif %}
